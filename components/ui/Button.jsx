@@ -3,10 +3,9 @@ export function Button({ children, onClick, className = '', type = 'button' }) {
         <button
             type={type}
             onClick={onClick}
-            className={`cursor-pointer bg-white text-black hover:bg-white transition-colors duration-200 ${className}`}
+            className={`cursor-pointer  ${className}`}
         >
             {children}
         </button>
     );
 }
-

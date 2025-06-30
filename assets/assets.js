@@ -4,6 +4,9 @@ import insta from './insta.png'
 import twit from './twit.png'
 import line from './line.png'
 import call from './call.png'
+import downArrow from './down-arrow.png'
+import cardLogo from './card-logo.png'
+
 
 export const assets = {
     rightArrow,
@@ -11,7 +14,9 @@ export const assets = {
     insta,
     twit,
     line,
-    call
+    call,
+    downArrow,
+    cardLogo
 }
 
 export default assets
