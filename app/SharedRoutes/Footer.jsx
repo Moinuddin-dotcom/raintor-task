@@ -11,7 +11,7 @@ export default function Footer() {
             <div className='grid md:grid-cols-2 gap-10 mt-10'>
                 <h1 className="font-bold text-base sm:text-lg lg:text-xl text-[#C5FF41]">DEVLOP.ME</h1>
                 <div>
-                    <h1 className='text-6xl text-white'>As You Can</h1>
+                    <h1 className='text-2xl md:text-6xl text-white'>As You Can</h1>
                 </div>
             </div>
             <div className='grid md:grid-cols-6 gap-10 mt-10'>
@@ -53,10 +53,10 @@ export default function Footer() {
                 </div>
             </div>
             <div className='mt-20 py-20'>
-                <ul className='flex justify-between'>
+                <ul className=' flex justify-between'>
                     <li>BESNIK</li>
-                    <li>© devlop.me 2022</li>
-                    <li>PRIVACY - TERMS</li>
+                    <li className='hidden md:flex'>© devlop.me 2022</li>
+                    <li className='hidden md:flex'>PRIVACY - TERMS</li>
                 </ul>
             </div>
         </div>
