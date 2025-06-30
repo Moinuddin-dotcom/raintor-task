@@ -1,14 +1,31 @@
-import { Geist, Geist_Mono } from "next/font/google";
+// import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
+// import Navbar from "./SharedRoutes/Navbar";
+// import Footer from "./SharedRoutes/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+// const geistSans = Geist({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+// const geistMono = Geist_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
+
+const myFont = localFont({
+  src: [
+    {
+      path: "../public/fonts/sporting-grotesque/SportingGrotesque-Regular.otf",
+      weight: "400",
+    },
+    {
+      path: "../public/fonts/sporting-grotesque/SportingGrotesque-Bold.otf",
+      weight: "700",
+    },
+  ],
+  variable: "--font-myfont",
 });
 
 export const metadata = {
@@ -20,9 +37,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+        className={`${myFont.variable} antialiased  `}>
+        {/* <Navbar /> */}
         {children}
+        {/* <Footer /> */}
       </body>
     </html>
   );
