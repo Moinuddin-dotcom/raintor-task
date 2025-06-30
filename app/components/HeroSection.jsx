@@ -17,7 +17,6 @@ export default function HeroSection() {
                 <div className='grid grid-cols-12 gap-10 mt-10'>
                     <div className='images col-span-3 w-48 hidden lg:flex'>
                         <div className='flex gap-5 justify-start'>
-                            {/* -rotate-90 w-40 */}
                             <span className='rotate-90 mr-10 text-end'>@williamrey</span>
                             <ul className=' '>
                                 <li>
@@ -42,7 +41,7 @@ export default function HeroSection() {
                             <div className='flex justify-center items-center gap-2 border border-black rounded-full p-2 md:p-4'>
                                 <Image src={assets.call} alt='right arrow' width={25} height={25} />
                             </div>
-                            <span className='font-semibold'>Start Project</span></Button>
+                            <span className='font-semibold'>Schedule a Call</span></Button>
                     </div>
                 </div>
             </div>

@@ -7,6 +7,10 @@ import call from './call.png'
 import downArrow from './down-arrow.png'
 import cardLogo from './card-logo.png'
 import group from './Group.png'
+import fbWhite from './fb-wh.png'
+import instaWhite from './insta-wh.png'
+import twitWhite from './twit-wh.png'
+import lineWhite from './line-wh.png'
 
 
 export const assets = {
@@ -18,7 +22,11 @@ export const assets = {
     call,
     downArrow,
     cardLogo,
-    group
+    group,
+    fbWhite,
+    instaWhite,
+    twitWhite,
+    lineWhite
 }
 
 export default assets
