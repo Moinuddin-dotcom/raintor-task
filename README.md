@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Raintor Ltd. Frontend Developer Technical Assessment
 
-## Getting Started
+This project is a submission for the Frontend Developer role at Raintor Ltd., implementing a responsive developer portfolio homepage based on the provided Figma design. The application is built with Next.js, Tailwind CSS, and includes features like a theme toggle, skeleton loading, and accessibility enhancements.
 
-First, run the development server:
+Live Demo: **https://raintor-task-swart.vercel.app/**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+GitHub Repository: **https://github.com/williamrey/raintor-task**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project Overview
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+The project implements the homepage of a developer portfolio as per the Figma design (https://www.figma.com/design/5K0twoVnr0hDHe5EoB5jFi/Portfolio?node-id=73-446&p=f). It includes:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Responsive UI**: Pixel-perfect implementation with Tailwind CSS, tested across mobile, tablet, and desktop screens.
+<!-- - **Theme Toggle**: Dark/light mode with persistence using `localStorage` and Tailwind’s `dark` class. -->
+- **Reusable Components**: Modular `Button`, `Card`, `Navbar`, and components.
+- **Skeleton Loading**: Placeholder UI during data loading (simulated for portfolio cards).
+- **Accessibility**: ARIA roles, labels, and keyboard navigation support.
+- **Modular Architecture**: Organized into `components/`, `contexts/`, and `assets/` directories.
 
-## Learn More
+## Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
+- **Framework**: Next.js 14 (App Router)
+- **Styling**: Tailwind CSS
+- **Icons**: `lucide-react` for menu, theme toggle, and other icons
+<!-- - **State Management**: React Context API (`ThemeContext`) for theme toggle -->
+- **Image Optimization**: Next.js `Image` component
+<!-- - **Type Checking**: TypeScript for type safety -->
+- **Formatting**: ESLint and Prettier for code consistency
+- **Testing**: Jest and React Testing Library (basic unit test for `Button` component)
+- **Deployment**: Vercel for hosting
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Setup Instructions
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Prerequisites
+- Node.js (v18 or higher)
+- npm or yarn
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/raintor-task.git
+   cd raintor-task
