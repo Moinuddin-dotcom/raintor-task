@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import assets from '@/assets/assets';
+import { ThemeToggle } from './ThemeToggle';
 
 export default function Navbar() {
     const sideMenuRef = useRef();
@@ -40,6 +41,7 @@ export default function Navbar() {
                             <a href="#work" className="hover:underline">Blog</a>
                         </li>
                     </ul>
+                    {/* <ThemeToggle /> */}
                     <Button className="hidden md:flex justify-center items-center gap-1 sm:gap-2 py-1 sm:py-2 px-2 sm:px-3 border border-black rounded-full text-xs sm:text-sm">
                         <div className="flex justify-center items-center border border-black rounded-full p-1 sm:p-2">
                             <Image src={assets.rightArrow} alt="right arrow" width={16} height={4} className="sm:w-5 sm:h-5" />

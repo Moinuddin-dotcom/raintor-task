@@ -1,6 +1,7 @@
 
 import localFont from "next/font/local";
 import "./globals.css";
+import { ThemeProvider } from "@/components/Provider/ThemeContext";
 
 const myFont = localFont({
   src: [
@@ -27,7 +28,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${myFont.variable} antialiased  `}>
         {/* <Navbar /> */}
-        {children}
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
         {/* <Footer /> */}
       </body>
     </html>
