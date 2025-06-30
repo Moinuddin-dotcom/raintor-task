@@ -2,6 +2,8 @@
 import assets from '@/assets/assets'
 import { Button } from '@/components/ui/Button'
 import { Card } from '@/components/ui/Card'
+import { ColorWideCard } from '@/components/ui/ColorWideCard'
+import { WideCard } from '@/components/ui/WideCard'
 import { MoveDown, MoveLeft, MoveRight } from 'lucide-react'
 import Image from 'next/image'
 import React from 'react'
@@ -13,9 +15,9 @@ export default function WhyChooseSec() {
                 <div className='p-3 rounded-full border-2 border-white'>
                     <MoveDown size={15} />
                 </div>
-                <Button className='border-2 border-white bg-black text-white rounded-2xl px-4 py-2'>Why Choose me</Button>
+                <Button className='border-2 border-white bg-black text-white rounded-2xl px-4 py-2'>Work Process</Button>
             </div>
-            <div className='grid md:grid-cols-2 gap-10 mt-10'>
+            {/* <div className='grid md:grid-cols-2 gap-10 mt-10'>
                 <div className='justify-self-center md:justify-self-start'>
                     <h1 className='font-bold text-2xl md:text-4xl lg:text-5xl xl:text-6xl'>My Extensive List of Skills</h1>
                 </div>
@@ -32,22 +34,28 @@ export default function WhyChooseSec() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             {/* Cards */}
-            <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10'>
-                <Card
-                    logoSrc={assets.cardLogo}
+            <div className='grid md:grid-cols-2 gap-10 mt-10'>
+                <WideCard
                     title='HTML & CSS'
+                    read='Read More'
                     description='Duis aute irure dolor in reprehenderit in voluptate. Ut enim ad minim veniam, quis.'
                 />
-                <Card
-                    logoSrc={assets.cardLogo}
-                    title='Javascript'
+                <ColorWideCard
+                    title='HTML & CSS'
+                    read='Read More'
                     description='Duis aute irure dolor in reprehenderit in voluptate. Ut enim ad minim veniam, quis.'
                 />
-                <Card
-                    logoSrc={assets.cardLogo}
-                    title='Webflow'
+                <WideCard
+                    title='HTML & CSS'
+                    read='Read More'
+                    description='Duis aute irure dolor in reprehenderit in voluptate. Ut enim ad minim veniam, quis.'
+                />
+
+                <WideCard
+                    title='HTML & CSS'
+                    read='Read More'
                     description='Duis aute irure dolor in reprehenderit in voluptate. Ut enim ad minim veniam, quis.'
                 />
             </div>
