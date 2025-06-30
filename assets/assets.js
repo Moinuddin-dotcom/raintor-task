@@ -6,6 +6,7 @@ import line from './line.png'
 import call from './call.png'
 import downArrow from './down-arrow.png'
 import cardLogo from './card-logo.png'
+import group from './Group.png'
 
 
 export const assets = {
@@ -16,7 +17,8 @@ export const assets = {
     line,
     call,
     downArrow,
-    cardLogo
+    cardLogo,
+    group
 }
 
 export default assets

@@ -4,6 +4,7 @@ import Navbar from "./SharedRoutes/Navbar";
 import Footer from "./SharedRoutes/Footer";
 import AboutSection from "./components/AboutSection";
 import WhyChooseSec from "./components/WhyChooseSec";
+import WorkProcess from "./components/WorkProcess";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <HeroSection />
       <WhyChooseSec />
       <AboutSection />
+      <WorkProcess />
       <Footer />
     </div>
   );
