@@ -38,5 +38,5 @@ The project implements the homepage of a developer portfolio as per the Figma de
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/raintor-task.git
+   git clone https://github.com/Moinuddin-dotcom/raintor-task.git
    cd raintor-task
